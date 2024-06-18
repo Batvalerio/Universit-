@@ -1,0 +1,2 @@
+I programmi scritti in un vero linguaggio macchina (livello 1) posso essere eseguiti direttamente dai circuiti del computer (livello 0), senza fare ricorso ad alcuna traduzione o interpretazione. Questi circuiti formano, l'insieme della memoria e ai dispositivi di input/output, ==l'hardware== del computer. 
+Al contrario  ==il software== consiste di algoritmi che rappresentano delle istruzioni dettagliate su come realizzare un determinato compito.

@@ -1,0 +1,5 @@
+Con il termine ==traduzione== si fa riferimento ad una tecnica che consiste in un metodo per eseguire un programma scritto in L1 dove viene sostituita, in una fase iniziale, ogni sua istruzione con un equivalente sequenza di istruzioni.
+Invece si chiama ==interpretazione== un altra tecnica che consiste nello scrivere un programma in L0 che accetta come dati d'ingresso programmi in L1; tale programma li esegue esaminando un'istruzione alla volta e sostituendola direttamente con l'equivalente sequenza di istruzioni. 
+Il programma che fa questo si chiama ==interprete==, ma invece di ragionare in termini di traduzione e interpretazione, possiamo immaginare l'esistenza di un ipotetico computer chiamato ==macchina virtuale== in cui il linguaggio macchina sia L1. Per rendere questi due processi veloci i linguaggi L0 e L1 non devono essere troppo diversi tra loro e ciascun linguaggio utilizza il precedente come base; quindi un computer che usa questa tecnica può essere immaginato come una serie di ==strati o livelli==disposti uno sopra l'altro. 
+![[Pasted image 20240405155401.png]]
+
