@@ -1,0 +1,4 @@
+Con ==dumo di memoria== si intende una mappa della memoria che un programmatore doveva portarsi a casa per analizzarla quando un programma non funzionava. 
+Intorno al 1960 si cerco di ridurre la quantità di tempo sprecato per eseguire un programma e si creò un programma chiamato ==sistema operativo== che avevano nove istruzioni che erano spesso conosciute come ==macro del sistema operativo o chiamate al supervisore==,oggi generalmente ==chiamate di sistema==.
+I primi sistemi operativi leggevano pacchi di schede e stampavano l'output attraverso la stampante attraverso un organizzazione chiamata ==sistema batch== ("a lotti").
+Successivamente un programmatore poteva ottenere un risultato di un programma quasi immediatamente e dove voleva lui attraverso dei sistemi chiamati ==sistemi a condivisione di tempo== (time sharing system)
