@@ -1,0 +1,16 @@
+- ==L’**industria dei computer**== è sempre stata spinta dalla ricerca di una ==**maggiore potenza di calcolo**.== Nonostante le attuali macchine siano molto più veloci rispetto ai primi computer come l’ENIAC, c’è ancora una richiesta di maggiore potenza.
+- Questa necessità proviene da vari campi, tra cui ==l’**astronomia**==, la ==**biologia** e l’**ingegneria aeronautica**.==
+- In passato, l’aumento della ==**velocità del clock**== era la soluzione per ottenere più potenza. Tuttavia, ci sono limiti fisici a quanto velocemente può andare un computer.
+- Secondo la ==**teoria della relatività ristretta di Einstein**==, nessun segnale elettrico può propagarsi più velocemente della velocità della luce. Questo pone un limite alla dimensione e alla velocità dei computer.
+- Più veloce è il computer, più ==**calore genera**.== Più piccolo è il computer, più difficile è dissipare questo calore. Questo rappresenta un altro problema fondamentale per lo sviluppo futuro dei computer.
+- Per ottenere una maggiore velocità di calcolo, un approccio consiste nell’utilizzo di ==**computer massicciamente paralleli**.== Questi sistemi sono composti da molte CPU che lavorano insieme, ognuna delle quali opera a una velocità “normale”, ma collettivamente hanno una potenza di calcolo molto superiore a quella di una singola CPU.
+- Un altro sviluppo importante è la ==**rapida crescita di Internet**==, che ha permesso di collegare migliaia di computer in tutto il mondo per lavorare insieme su problemi scientifici di grandi dimensioni.
+- Tuttavia, ci sono sfide ==nell’**interconnessione di un gran numero di computer**== per lavorare insieme, il che ha portato allo sviluppo di diverse tecnologie e organizzazioni software.
+- In sintesi, l’industria dei computer sta cercando modi innovativi per aumentare la potenza di calcolo, tra cui l’uso di computer massicciamente paralleli e l’interconnessione di computer su larga scala attraverso Internet.
+- Tutte le comunicazioni tra componenti elettroniche o ottiche si riducono a ==**mandare messaggi**==(stringhe di bit ben definite) tra le componenti stesse.
+- Esistono ==**multiprocessori a memoria condivisa**==, dove da 2 a circa 1000 CPU comunicano mediante una memoria condivisa. Ogni CPU ha eguali possibilità di accesso all’intera memoria fisica.
+- Esiste un tipo di sistema chiamato ==**multicomputer a scambio di messaggi**==, in cui un insieme di coppie memoria-CPU sono connesse da un sistema di interconnessione ad alta velocità. Ciascuna memoria è locale ad una sola CPU.
+- ==Il **terzo modello**== connette sistemi di computer completi su una rete geografica, come Internet, per formare un sistema distribuito. I sistemi comunicano per scambio di messaggi.
+- I tre tipi di sistema differiscono nei loro ritardi per ben tre ordini di grandezza. La differenza, cioè, fra un giorno e tre anni.
+- Questo capitolo contiene tre sezioni principali, corrispondenti ai tre modelli. Ciascuna inizia con una breve descrizione dell’hardware pertinente al sistema, per passare poi al software, in particolare alle questioni inerenti al sistema operativo. In ciascun caso si presentano problemi diversi.
+ ![[Pasted image 20240516165013.png]]

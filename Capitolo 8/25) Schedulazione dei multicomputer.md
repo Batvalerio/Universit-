@@ -1,0 +1,9 @@
+In un multiprocessore, tutti i processi condividono la stessa memoria e possono essere eseguiti su qualsiasi CPU disponibile. Quando una CPU completa il suo task corrente, può scegliere qualsiasi processo dalla lista dei processi pronti e avviarlo immediatamente.
+
+Tuttavia, su un multicomputer, ogni nodo ha la sua memoria locale e il proprio insieme di processi. La CPU di un nodo non può eseguire improvvisamente un processo che risiede su un altro nodo senza prima trasferire il processo stesso nella propria memoria. Questa differenza rende l'allocazione dei processi ai nodi molto importante sui multicomputer.
+
+### Schedulazione su Multicomputer
+
+La schedulazione sui multicomputer è simile a quella sui multiprocessori, ma non tutti gli algoritmi possono essere direttamente applicati. Ad esempio, un approccio comune nei multiprocessori è mantenere una lista centralizzata dei processi pronti, ma questo non funziona bene sui multicomputer perché i processi devono essere eseguiti sui nodi dove risiedono.
+
+Poiché ogni nodo ha i suoi processi, è possibile utilizzare algoritmi di schedulazione locali su ciascun nodo. Tuttavia, è anche possibile coordinare la schedulazione tra i nodi utilizzando un approccio di schedulazione "gang", simile a quello utilizzato sui multiprocessori. In questo caso, si stabilisce un accordo iniziale su quali processi devono essere eseguiti nei diversi intervalli di tempo, e si coordina l'inizio di tali intervalli tra i nodi. Questo approccio richiede una certa sincronizzazione iniziale ma può essere efficace nel bilanciare il carico di lavoro sui nodi del multicomputer.

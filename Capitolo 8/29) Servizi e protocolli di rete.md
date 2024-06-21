@@ -1,0 +1,11 @@
+**Servizi di rete:**
+I servizi di rete possono essere orientati alla connessione o senza connessione e possono variare nella loro affidabilità. Un servizio orientato alla connessione, simile al sistema telefonico, richiede l'instaurazione, l'utilizzo e il rilascio di una connessione tra mittente e destinatario. Al contrario, un servizio senza connessione, simile al sistema postale, invia messaggi indipendentemente l'uno dall'altro, anche se possono arrivare fuori sequenza. L'affidabilità di un servizio dipende dalla capacità di garantire che i dati siano trasmessi correttamente e nell'ordine corretto, ad esempio, attraverso l'invio di messaggi di riscontro.
+
+**Protocolli di rete:**
+I protocolli di rete sono regole che governano la comunicazione tra computer in una rete. Esistono protocolli per diverse funzionalità, come l'instradamento dei pacchetti, la trasmissione affidabile e la gestione delle connessioni. I protocolli sono impilati uno sopra l'altro in uno stack di protocolli, ognuno affrontando problemi specifici a diversi livelli di astrazione. Ad esempio, a livello inferiore, i protocolli specificano la formattazione dei pacchetti all'interno di un flusso di bit, mentre a livello superiore, i protocolli gestiscono il trasporto affidabile dei dati.
+
+**Protocolli principali:**
+Nel contesto di Internet, i due principali protocolli sono IP (Internet Protocol) e TCP (Transmission Control Protocol). IP è un protocollo datagramma che fornisce instradamento senza connessione dei pacchetti attraverso Internet. TCP, che si basa su IP, fornisce un flusso orientato alla connessione di dati tra mittente e destinatario. TCP garantisce la consegna affidabile e ordinata dei dati utilizzando numeri di sequenza, checksum e ritrasmissione dei pacchetti non correttamente ricevuti. DNS (Domain Name System) è un altro protocollo importante che mappa i nomi degli host in indirizzi IP, consentendo agli utenti di utilizzare nomi di dominio anziché indirizzi IP numerici per identificare i destinatari dei messaggi.
+
+In sintesi, i servizi e i protocolli di rete sono fondamentali per consentire la comunicazione affidabile e efficiente tra computer in una rete, come illustrato nel contesto di Internet e dei suoi principali protocolli.
+![[Pasted image 20240519154403.png]]![[Pasted image 20240519154434.png]]

@@ -1,0 +1,8 @@
+- ==**Divisione della memoria**:== Il modo più semplice per organizzare un sistema operativo multiprocessore consiste nel dividere staticamente la memoria in tante partizioni quante sono le CPU, fornendo a ciascuna CPU la propria memoria privata e la propria copia del sistema operativo. In questo modo, le n CPU operano come n computer indipendenti.
+- ==**Condivisione del codice del sistema operativo**:== Un’ottimizzazione è permettere a tutte le CPU di condividere il codice del sistema operativo e fare copie private solo dei dati.
+- ==**Vantaggi rispetto a n computer separati**:== Questo schema permette a tutte le macchine di condividere un insieme di dischi e altri dispositivi di I/O, oltre ad una condivisione flessibile della memoria. I processi possono comunicare efficientemente tra loro.
+- ==**Gestione delle chiamate di sistema**:== Quando un processo effettua una chiamata di sistema, essa è intercettata e gestita dalla propria CPU, utilizzando le strutture dati nelle tabelle del proprio sistema operativo.
+- §==**Schedulazione dei processi**:== Ciascun sistema operativo ha il proprio insieme di processi, che schedula per conto proprio. Non c’è condivisione di processi.
+- ==**Condivisione di pagine**:== Non c’è condivisione di pagine tra le CPU. L’allocazione di memoria è fissa.
+- ==**Cache di blocchi del disco**:== Se il sistema operativo mantiene una cache di blocchi del disco recentemente usati, ciascun sistema operativo lo fa indipendentemente dagli altri. Questo può portare a risultati inconsistenti.
+- ==**Modello desueto**:== Per queste ragioni, tale modello è ormai desueto, benché sia stato impiegato nella fase iniziale dei sistemi multiprocessori.

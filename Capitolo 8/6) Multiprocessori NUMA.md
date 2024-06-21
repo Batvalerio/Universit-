@@ -1,0 +1,10 @@
+- I multiprocessori UMA a bus singolo sono generalmente limitati a non più di poche dozzine di CPU. Per avere più di cento CPU, si deve rinunciare all’idea che tutti i moduli di memoria abbiano lo stesso tempo di accesso. Questa concessione porta all’idea dei ==**multiprocessori NUMA**.==
+- I multiprocessori NUMA forniscono un singolo spazio degli indirizzi a tutte le CPU, ma l’accesso ai moduli della memoria locale è più veloce rispetto all’accesso ai moduli remoti. Quindi, tutti i programmi UMA saranno eseguibili senza cambiamento sulle macchine NUMA, ma le prestazioni saranno peggiori rispetto a quelle di una macchina UMA, alla stessa velocità di clock.
+- Le macchine NUMA hanno tre caratteristiche chiave:
+    1. C’è un singolo spazio degli indirizzi visibile a tutte le CPU.
+    2. L’accesso alla memoria remota avviene tramite le istruzioni LOAD e STORE.
+    3. L’accesso alla memoria remota è più lento rispetto all’accesso alla memoria locale.
+- Quando il tempo di accesso alla memoria remota non è nascosto (perché non c’è cache), il sistema è chiamato ==**NC-NUMA**.== Quando sono presenti cache coerenti, si parla di ==**CC-NUMA** (Cache-Coherent NUMA).==
+- Il più seguito approccio per costruire grandi sistemi multiprocessore CC-NUMA è attualmente il ==**multiprocessore basato su directory**.== L’idea è di mantenere un database che dica dove sia ciascuna linea di cache, e quale sia il suo stato.
+- Un’ovvia limitazione di questa architettura consiste nel fatto che una linea può essere nella cache di un solo nodo; per consentire alle linee di essere nella cache di qualunque nodo, avremmo bisogno di un modo per localizzarle, ad esempio per invalidarle o aggiornarle in presenza di un’operazione di scrittura.
+- L’overhead per la directory ammonta a circa 9 x 218 bit diviso per 16MB, circa lo 1,76%, che è generalmente accettabile (benché si tratti di memoria ad alta velocità che fa salire il costo). Anche con linee di cache da 32 byte, l’overhead sarebbe solo del 4%, e con linee da 128 byte, sarebbe inferiore allo 1%.

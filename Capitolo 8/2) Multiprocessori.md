@@ -1,0 +1,5 @@
+- ==Un **multiprocessore a memoria condivisa (SMP)**== è un sistema di computer in cui ==**due o più CPU condividono il pieno accesso ad una RAM comune**.==
+- Un programma in esecuzione su una delle CPU utilizza un normale spazio degli indirizzi virtuale, di solito paginato.
+- La proprietà peculiare di questi sistemi è che la CPU può scrivere qualche valore in una parola di memoria, e quando la rilegge può ottenere un valore differente perché un’altra CPU lo ha cambiato. Questa proprietà fornisce le basi della ==**comunicazione fra processi**==: una CPU scrive dati in memoria, un’altra li legge.
+- I sistemi operativi multiprocessore sono per la maggior parte sistemi operativi normali: gestiscono le chiamate di sistema, la memoria e i dispositivi di I/O, e forniscono un file system.
+- Tuttavia, i sistemi operativi multiprocessore hanno alcune caratteristiche proprie, ad esempio la ==**sincronizzazione dei processi**, la **gestione delle risorse** e la **schedulazione**.==

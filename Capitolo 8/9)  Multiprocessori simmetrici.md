@@ -1,0 +1,7 @@
+- ==**Modello SMP**:== In questo modello, c’è una copia del sistema operativo in memoria, ma ogni CPU può eseguirlo. La CPU che ha effettuato la chiamata di sistema, effettua una trap al kernel e elabora la chiamata di sistema.
+- ==**Bilanciamento dinamico**:== Questo modello bilancia i processi e la memoria dinamicamente, poiché c’è solo un insieme di tabelle del sistema operativo. Elimina anche il collo di bottiglia della CPU master, perché non esiste un master.
+- ==**Problemi di esecuzione contemporanea**:== Se due o più CPU stanno eseguendo codice del sistema operativo in contemporanea, avverrà un disastro. Per evitare questi problemi, è associato un mutex (cioè un lock) al sistema operativo, rendendo l’intero sistema una grande regione critica.
+- ==**Suddivisione in regioni critiche**:== Il sistema operativo è suddiviso in regioni critiche indipendenti, che non interagiscono l’una con l’altra. Ciascuna regione critica è protetta dal proprio mutex.
+- ==**Uso di tabelle**:== Alcune tabelle, come quella dei processi, sono usate da diverse regioni critiche. Ciascuna tabella che può essere usata da diverse regioni critiche, ha bisogno del proprio mutex.
+- ==**Evitare i deadlock**:== Bisogna evitare i deadlock. Se due regioni critiche hanno bisogno entrambe della stessa tabella, e una di esse la richiede per prima, prima o poi avverrà un deadlock.
+- ==**Manutenzione del sistema**:== Rendere il sistema corretto non è facile, e mantenerlo tale nel corso degli anni cambiando programmatori, è veramente difficile.
